@@ -1,16 +1,14 @@
 package hello.core;
 
-import hello.core.member.Grade;
-import hello.core.member.Member;
-import hello.core.member.MemberService;
-import hello.core.member.MemberServiceImpl;
+import hello.core.member.*;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceTest {
-    MemberService memberService = new MemberServiceImpl();
+    MemberRepository memberRepository = new MemoryMemberRepository();
+    MemberService memberService = new MemberServiceImpl(memberRepository);
     @Test
     void join() {
         //given
