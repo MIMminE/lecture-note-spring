@@ -1,5 +1,5 @@
 package hello.core.order;
 
 public interface OrderService {
-    public void order();
+    public Order createOrder(Long memberId, String itemName, int itemPrice);
 }

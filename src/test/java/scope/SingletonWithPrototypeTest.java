@@ -24,14 +24,14 @@ public class SingletonWithPrototypeTest {
 
         ClientBean clientBean2 = ac.getBean(ClientBean.class);
         int count2 = clientBean2.logic();
-        assertThat(count2).isEqualTo(2);
+        assertThat(count2).isEqualTo(1);
 
     }
 
     @Scope("singleton")
     static class ClientBean{
         //private final PrototypeBean prototypeBean;
-        private ObjectProvider<PrototypeBean> prototypeBeantProvider;
+        private final ObjectProvider<PrototypeBean> prototypeBeantProvider;
 
         public ClientBean(ObjectProvider<PrototypeBean> prototypeBeantProvider) {
             this.prototypeBeantProvider = prototypeBeantProvider;
