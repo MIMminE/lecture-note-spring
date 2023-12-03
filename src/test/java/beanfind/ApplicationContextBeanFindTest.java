@@ -11,14 +11,15 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ApplicationContextBeanFindTest {
+
+    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+
+    @Test
     @DisplayName("이름 없이 타입만으로 조회")
     void findBeanByType(){
         MemberService memberService = ac.getBean(MemberService.class);
         Assertions.assertThat(memberService).isInstanceOf(MemberService.class);
     }
-
-
-    AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
 
     @Test
     @DisplayName("빈 이름으로 조회")
@@ -28,10 +29,9 @@ public class ApplicationContextBeanFindTest {
     }
 
     @Test
-    @DisplayName("빈 이름 조회 실패 케이스")
+    @DisplayName("조회 실패 케이스")
     void findBeanFail(){
         assertThrows(NoSuchBeanDefinitionException.class,
-                () -> ac.getBean("XXXX",MemberService.class));
+                () -> ac.getBean("XX"));
     }
-
 }

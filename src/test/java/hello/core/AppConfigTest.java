@@ -37,7 +37,7 @@ class AppConfigTest {
         Member member = new Member(1L, "testMember1", Grade.VIP);
         memberService.join(member);
 
-        Order order = orderService.createOrder(1L, "itemA", 10000);
+        Order order = orderService.createOrder(1L, "itemA", 20000);
         System.out.println("order = " + order);
     }
 }
