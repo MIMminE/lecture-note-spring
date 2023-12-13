@@ -21,7 +21,7 @@ public class MemberListServlet extends HttpServlet {
         response.setContentType("text/html");
         response.setCharacterEncoding("utf-8");
 
-        List<Member> memberList = memberRepository.finaAll();
+        List<Member> memberList = memberRepository.findAll();
         PrintWriter w = response.getWriter();
         w.write("<html>");
         w.write("<head>");

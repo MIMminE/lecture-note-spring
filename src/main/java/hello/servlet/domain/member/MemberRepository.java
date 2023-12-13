@@ -25,7 +25,7 @@ public class MemberRepository {
     public Member findById(Long id){
         return store.get(id);
     }
-    public List<Member> finaAll(){
+    public List<Member> findAll(){
         return new ArrayList<>(store.values());
     }
 
