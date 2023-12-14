@@ -15,7 +15,7 @@ public class Member {
     }
 
     public Member(String username, int age) {
-        this.id = id;
+        this.age = age;
         this.username = username;
     }
 }
