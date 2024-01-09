@@ -2,6 +2,7 @@ package hello.login.web;
 
 import hello.login.domain.member.Member;
 import hello.login.domain.member.MemberRepository;
+import hello.login.web.argumentresolver.Login;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -21,7 +22,7 @@ public class HomeController {
         return "home";
     }
 
-    @GetMapping("/")
+//    @GetMapping("/")
     public String homeLogin(
             @CookieValue(name = "memberId", required = false) Long memberId, Model model){
 
@@ -36,5 +37,18 @@ public class HomeController {
 
         model.addAttribute("member", loginMember);
         return "login/loginHome";
+    }
+
+    @GetMapping("/")
+    public String homeLoginArgumentResolver(@Login Member loginMember, Model model){
+
+        // 세션에 회원 데이터가 없으면 home
+        if (loginMember == null){
+            return "home";
+        }
+    
+        // 세션이 유지되어 있으면 로그인으로 이동
+        model.addAttribute("member", loginMember);
+        return "loginHome";
     }
 }
