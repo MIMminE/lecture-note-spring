@@ -4,10 +4,10 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../lecture-note-spring/스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/스프링 DB 1편 - 데이터 접근 핵심 원리/spring-db-1" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../lecture-note-spring/스프링 MVC 1편 - 백엔드 웹 개발 핵심 기술" />
+            <option value="$PROJECT_DIR$/스프링 DB 1편 - 데이터 접근 핵심 원리/spring-db-1" />
           </set>
         </option>
       </GradleProjectSettings>
