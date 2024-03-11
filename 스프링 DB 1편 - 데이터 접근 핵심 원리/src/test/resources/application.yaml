@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    generate-unique-name: false
+
+  profiles:
+    active: test
+
+logging:
+  level:
+    org.springframework.jdbc: debug
+    lecture.repository: debug
