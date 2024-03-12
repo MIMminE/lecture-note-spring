@@ -9,3 +9,6 @@ logging:
   level:
     org.springframework.jdbc: debug
     lecture.repository: debug
+    com.zaxxer.hikari: debug
+#  pattern:
+#    console: "%d{HH:mm:ss.SSS} [%thread] %-5level- %msg%n"
