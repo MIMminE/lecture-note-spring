@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.JdbcUtils;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -67,7 +68,6 @@ public class MemberRepositoryV1 {
             close(con, pstmt, rs);
         }
     }
-
     public void update(String memberId, int money) throws SQLException {
         String sql = "update member set money = ? where member_id = ?";
 
