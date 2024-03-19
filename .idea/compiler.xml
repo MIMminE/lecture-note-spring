@@ -9,11 +9,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="db1" />
       </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
+        </processorPath>
+        <module name="advanced.main" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="servlet" target="17" />
-      <module name="servlet.main" target="17" />
-      <module name="servlet.test" target="17" />
       <module name="spring-db-1" target="17" />
       <module name="spring_db" target="17" />
     </bytecodeTargetLevel>
