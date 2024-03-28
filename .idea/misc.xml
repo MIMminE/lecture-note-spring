@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/스프링 DB 1편 - 데이터 접근 핵심 원리/spring-db-1" />
+    <file type="web" url="file://$PROJECT_DIR$/스프링 핵심 원리 - 고급편" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
