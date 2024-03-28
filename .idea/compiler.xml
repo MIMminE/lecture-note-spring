@@ -13,6 +13,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="core" target="21" />
+      <module name="core.main" target="21" />
+      <module name="core.test" target="21" />
       <module name="servlet" target="17" />
       <module name="spring-db-1" target="17" />
       <module name="spring_db" target="17" />
