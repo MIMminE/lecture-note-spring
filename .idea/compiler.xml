@@ -8,10 +8,16 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.30/f195ee86e6c896ea47a1d39defbe20eb59cd149d/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="aop.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="advanced" target="17" />
+      <module name="aop" target="17" />
+      <module name="aop.main" target="17" />
+      <module name="aop.test" target="17" />
+      <module name="core" target="21" />
+      <module name="core.main" target="21" />
+      <module name="core.test" target="21" />
       <module name="servlet" target="17" />
       <module name="spring-db-1" target="17" />
       <module name="spring_db" target="17" />
