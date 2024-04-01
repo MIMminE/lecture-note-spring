@@ -28,6 +28,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/스프링 핵심 원리 - 고급편/aop" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/스프링 핵심 원리 - 고급편/aop" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/스프링 핵심 원리 - 기본편" />
         <option name="modules">
           <set>
